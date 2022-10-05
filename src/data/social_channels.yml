@@ -1,0 +1,44 @@
+##
+## Community communication channels
+##
+##    "id"        - unique ID for the channel, not displayed on website
+##    "url"       - url to the channel
+##    "name"      - display name for the channel, displayed on website
+##    "footer"    - whether the channel should be included in the page footer
+
+
+-
+  id: github
+  url: "https://github.com/decred"
+  name: "GitHub"
+  footer: false
+-
+  id: matrix
+  url: "https://chat.decred.org"
+  name: "Matrix (via Element)"
+  footer: true
+-
+  id: twitter
+  url: "https://twitter.com/decredproject"
+  name: Twitter
+  footer: true
+-
+  id: youtube
+  url: "https://www.youtube.com/decredchannel"
+  name: YouTube
+  footer: true
+-
+  id: medium
+  url: "https://medium.com/decred"
+  name: Medium
+  footer: true
+-
+  id: discord
+  url: "https://discord.gg/dXSmwvYury"
+  name: Discord
+  footer: true
+-
+  id: reddit
+  url: "https://reddit.com/r/decred"
+  name: Reddit
+  footer: true

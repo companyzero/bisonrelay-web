@@ -1,0 +1,52 @@
+<footer class="g-0">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-6 col-md-2 pe-md-3">
+                <div class="footer-title">
+                    {{ T "bison_relay" }}
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="footer-link">
+                        <a href="{{ "/features/" | relLangURL }}">{{ T "page_title_features" }}</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="{{ "/how_to/"   | relLangURL }}">{{ T "page_title_how_to" }}</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="#">{{ T "support" }}</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-2">
+                <div class="footer-title">
+                    {{ T "download" }}
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="footer-link">
+                        <a href="#">{{ T "windows" }}</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="#">{{ T "mac_os" }}</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="#">{{ T "linux" }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-auto ms-0 ms-md-auto pt-4 pt-md-0">
+                <div class="footer-title">
+                    {{ T "social_comms" }}
+                </div>
+                <div class="d-flex flex-row flex-wrap">
+                    {{ range where $.Site.Data.social_channels "footer" true }}
+                        <a href="{{ .url }}" class="social-icon d-inline-block {{ .id }}" target="_blank" rel="noopener noreferrer"></a>
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>

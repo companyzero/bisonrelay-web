@@ -1,0 +1,318 @@
+#content {
+    position: absolute;
+    top: calc(100vh - #{$navbar-height});
+}
+
+.landing-fronta {
+    height: calc(100vh - #{$navbar-height});
+
+    background: linear-gradient(148deg, rgba(0,0,17,1) 0%, rgba(14,0,15,1) 34%, rgba(59,5,10,1) 62%, rgba(14,0,15,1) 89%, rgba(0,0,17,1) 100%);
+    
+    background-image: -webkit-image-set(
+        url("../images/landing-bg/xl/bg-img.jpg") 1x,
+        url("../images/landing-bg/xl/bg-img@2x.jpg") 2x
+    );
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    @include media-breakpoint-down(xl) {
+        background-image: -webkit-image-set(
+            url("../images/landing-bg/lg/bg-img.jpg") 1x,
+            url("../images/landing-bg/lg/bg-img@2x.jpg") 2x
+        );
+    }
+    @include media-breakpoint-down(lg) {
+        background-image: -webkit-image-set(
+            url("../images/landing-bg/md/bg-img.jpg") 1x,
+            url("../images/landing-bg/md/bg-img@2x.jpg") 2x
+        );
+    }
+    @include media-breakpoint-down(md) {
+        background-image: -webkit-image-set(
+            url("../images/landing-bg/sm/bg-img.jpg") 1x,
+            url("../images/landing-bg/sm/bg-img@2x.jpg") 2x
+        );
+    }
+
+    .fronta-center {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: $navbar-height;
+
+        .slogan {
+            display: flex;
+            flex-direction: column;
+            max-width: 608px;
+            font-size: 38px;
+            line-height: 47px;
+            letter-spacing: 1.29px;
+            color: white;
+            margin-bottom: 34px;
+
+            .slogan_underline {
+                text-decoration: underline;
+            }
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                font-size: 34px;
+                line-height: 42px;
+                letter-spacing: 1.16px;
+            }
+        }
+
+        .btn {
+            color: white;
+            padding: 15px 25px;
+            border-radius: 37px;
+            border: 2px solid #FFFFFF8c;
+            font-size: 21px;
+            line-height: 25px;
+            text-decoration: none;
+            transition: background-color 0.13s ease-in-out;
+            white-space: nowrap;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+
+    .fronta-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 26px;
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+
+            .social {
+                margin: 8px;
+                height: 30px;
+                width: 30px;
+                background-size: 30px 30px;
+                background-repeat: no-repeat;
+                opacity: 0.75;
+                transition: opacity 0.13s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    opacity: 1.0;
+                }
+
+                &.matrix {
+                    background-image: url('../images/social-icons/matrix.svg');
+                }
+                
+                &.github {
+                    background-image: url('../images/social-icons/github.svg');
+                }
+
+                &.twitter {
+                    background-image: url('../images/social-icons/twitter.svg');
+                }
+
+            }
+        }
+
+        .see-more a {
+            color: $white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 15px;
+            opacity: 0.8;
+            transition: opacity 0.08s ease-in-out;
+
+            .down-arrow {
+                margin-top: 8px;
+                height: 69px;
+                width: 69px;
+                background-image: url("../images/white-down-arrow.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &:hover,
+            &:focus {
+                opacity: 1.0;
+            }
+        }
+    }
+}
+
+.landing-content {
+    color: $light-gray-text;
+    padding-top: 220px;
+    padding-bottom: 144px;
+
+    @include media-breakpoint-down(xl) {
+        padding-top: 100px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .landing-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 34px;
+
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+        border-color: $br-orange;
+
+        @include media-breakpoint-down(xl) {
+            padding: 21px;
+        }
+
+        .landing-img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-top: 22px;
+            margin-bottom: 22px;
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 24px;
+                margin-bottom: 20px;
+            }
+
+        }
+        
+        &.box1 {
+            .landing-img {
+                min-height: 154px;
+                background-image: url("../images/landing/graphic-freedom.svg");
+                @include media-breakpoint-down(xl) {
+                    min-height: 128px;
+                }
+                @include media-breakpoint-down(lg) {
+                    min-height: 177px;
+                }
+                @include media-breakpoint-down(md) {
+                    min-height: 160px;
+                }
+            }
+        }
+
+        &.box2 {
+            margin-top: 435px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 0;
+            }
+
+            .landing-img {
+                min-height: 92px;
+                background-image: url("../images/landing/graphic-secret.svg");
+                @include media-breakpoint-down(xl) {
+                    min-height: 121px
+                }
+                @include media-breakpoint-down(lg) {
+                    min-height: 160px
+                }
+                @include media-breakpoint-down(md) {
+                    min-height: 133px
+                }
+            }
+        }
+
+        &.box3 {
+            margin-top: -140px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 0;
+            }
+
+            .landing-img {
+                min-height: 156px;
+                background-image: url("../images/landing/graphic-publish.svg");
+                @include media-breakpoint-down(xl) {
+                    min-height: 150px;
+                }
+                @include media-breakpoint-down(lg) {
+                    min-height: 154px;
+                }
+                @include media-breakpoint-down(md) {
+                    min-height: 135px;
+                }
+            }
+        }
+
+        &.box4 {
+            margin-top: 250px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 0;
+            }
+            
+            .landing-img {
+                min-height: 192px;
+                background-image: url("../images/landing/graphic-censorship.svg");
+                @include media-breakpoint-down(xl) {
+                    min-height: 152px;
+                }
+                @include media-breakpoint-down(lg) {
+                    min-height: 143px;
+                }
+                @include media-breakpoint-down(md) {
+                    min-height: 129px;
+                }
+            }
+        }
+
+
+        .headline {
+            font-size: 34px;
+            line-height: 38px;
+            margin-bottom: 0;
+            letter-spacing: -0.4px;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 30px;
+                line-height: 36px;
+                letter-spacing: normal;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+                line-height: 27px;
+            }
+        }
+
+        .text {
+            font-size: 21px;
+            line-height: 30px;
+            margin-bottom: 0;
+        
+            @include media-breakpoint-down(xl) {
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+
+    }
+}

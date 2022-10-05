@@ -1,0 +1,43 @@
+// BR colors
+$br-orange:       #F35A00;
+$light-gray-text: #E4E3E6;
+$darker-gray:     #8E8D98;
+$footer-bg:       #121026;
+$dark-blue:       #05031A;
+$white:           rgb(255, 255, 255); // #FFFFFF
+
+$navbar-height: 98px;
+$max-width: 1920px;
+
+$grid-sm: 302px;
+$grid-md: 608px;
+$grid-lg: 788px;
+$grid-xl: 1004px;
+
+// Override some bootstrap defaults.
+$grid-breakpoints: (
+    xs: 0,
+    sm: $grid-sm + 100,
+    md: $grid-md + 100,
+    lg: $grid-lg + 100,
+    xl: $grid-xl + 100,
+    xxl: 999999999999999999999px
+);
+$container-max-widths: (
+    xs: $grid-sm - 1,
+    sm: $grid-sm,
+    md: $grid-md,
+    lg: $grid-lg,
+    xl: $grid-xl,
+);
+
+// Import bootstrap.
+@import "bootstrap-5.0.2/bootstrap";
+
+// Import brweb.
+@import "_common";
+@import "_navbar";
+@import "_footer";
+@import "_landing";
+@import "_features";
+@import "_fonts";

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" dir="{{ $.Param "languagedir" | default "ltr" }}">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{ block "page-title" . }}{{ end }}</title>
+        <meta property="og:title"      content="{{ block "page-title" . }}{{ end }}">
+        <meta property="twitter:title" content="{{ block "page-title" . }}{{ end }}" >
+
+        <meta name="description"         content='{{ T "bison_relay" }} — {{ T "landing_slogan_1" }} {{ T "landing_slogan_2" }}'>
+        <meta name="viewport"            content="width=device-width, initial-scale=1" >
+
+        <meta property="og:type"         content="website" />
+        <meta property="og:url"          content="https://bisonrelay.org/" />
+        <meta property="og:image"        content="https://bisonrelay.org/ogimg-v1.jpg"/>
+        <meta property="og:description"  content='{{ T "bison_relay" }} — {{ T "landing_slogan_1" }} {{ T "landing_slogan_2" }}'/>
+        
+        <meta name="twitter:card"        content="summary_large_image"/>
+        <meta name="twitter:image"       content="https://bisonrelay.org/ogimg-v1.jpg"/>
+        <meta name="twitter:description" content='{{ T "bison_relay" }} — {{ T "landing_slogan_1" }} {{ T "landing_slogan_2" }}'/>
+      
+        <link href="/images/32.png" rel="shortcut icon" type="image/x-icon">
+        <link href="/images/256.png" rel="apple-touch-icon">
+      
+        <!-- Compile and load scss. -->
+        {{ $scssOptions := (dict "targetPath" "br.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+        {{ $style := resources.Get "scss/br.scss" | resources.ToCSS $scssOptions | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+        <!--  Custom favicon  -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png?v=1sa542">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=1sa542">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=1sa542">
+        <link rel="manifest" href="/images/favicon/site.webmanifest?v=1sa542">
+        <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg?v=1sa542" color="#f35a00">
+        <link rel="shortcut icon" href="/images/favicon/favicon.ico?v=1sa542">
+        <meta name="apple-mobile-web-app-title" content="Bison Relay">
+        <meta name="application-name" content="Bison Relay">
+        <meta name="msapplication-TileColor" content="#f35a00">
+        <meta name="msapplication-config" content="/images/favicon/browserconfig.xml?v=1sa542">
+        <meta name="theme-color" content="#f35a00">
+      
+    </head>
+
+  <body id="top">
+
+    {{ partial "navbar.html" . }}
+    
+    <div class="navbar-margin">
+  
+      {{ block "main" . }}{{ end }}
+      
+      {{ partial "footer.html" . }}
+      
+      {{ $jsFiles := slice }}
+      {{ range $.Site.Params.js_resources }}
+          {{ $jsFiles = $jsFiles | append ( resources.Get . ) }}
+      {{ end }}
+      {{ $js := $jsFiles | resources.Concat "main.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    </div>
+
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+  </body>
+</html>

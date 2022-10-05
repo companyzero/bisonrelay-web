@@ -1,0 +1,8 @@
+{
+  "general_javascript_warning": "JavaScript请求",
+  "general_javascript_warning_description": "很抱歉，此网站在没有JavaScript的情况下不能正常工作。",
+  "page_not_found": "未找到页面",
+  "back_to_home_page": "返回主页面",
+  "notice": "注意",
+  "warning": "警告"
+}

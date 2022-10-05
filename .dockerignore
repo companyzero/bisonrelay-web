@@ -1,0 +1,7 @@
+*~
+.vscode/
+.git/
+.tmp/
+resources/
+public/
+node_modules/

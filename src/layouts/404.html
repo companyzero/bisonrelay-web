@@ -1,0 +1,17 @@
+{{ define "page-title" }}
+    {{ T "page_not_found" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="subpage-padding body-img-gradient g-0">
+    <div class="container">
+
+        <div class="subpage-header">
+            <div class="subpage-title">{{ T "page_not_found" }}</div>
+        </div>
+
+        <a href="{{ .Site.BaseURL | relLangURL }}">{{ T "back_to_home_page" }}</a>
+    
+    </div>
+</div>
+{{ end }}

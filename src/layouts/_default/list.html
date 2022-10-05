@@ -1,0 +1,112 @@
+{{ define "page-title" }}
+    {{ T "bison_relay" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="landing-fronta g-0">
+    <div class="container h-100">
+
+        <div class="d-flex flex-column justify-content-center h-100">
+
+            <div class="fronta-center align-items-start align-items-xl-center">
+                <div>
+                    <div class="slogan">
+                        <span class="slogan_underline">{{ T "landing_slogan_1" }}</span>
+                        <span>{{ T "landing_slogan_2" }}</span>
+                    </div>
+                    
+                    <div> 
+                        <a class="col-12 col-md-auto btn" href="{{ "#" | relLangURL }}">{{ T "landing_button" }}</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="fronta-bottom">
+                <div class="container d-flex flex-column flex-md-row-reverse flex-xl-row">
+                    
+                    <div class="socials col-12 col-md-4 pb-2 pe-md-0 d-flex align-items-end justify-content-center justify-content-md-end justify-content-xl-start">
+                        {{ range where $.Site.Data.social_channels "id" "matrix" }}
+                            <a class="social {{ .id }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer"></a>
+                        {{ end }}
+                        {{ range where $.Site.Data.social_channels "id" "github" }}
+                            <a class="social {{ .id }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer"></a>
+                        {{ end }}
+                        {{ range where $.Site.Data.social_channels "id" "twitter" }}
+                            <a class="social {{ .id }}" href="{{ .url }}" target="_blank" rel="noopener noreferrer"></a>
+                        {{ end }}
+                    </div>
+                    
+                    <div class="see-more col-12 col-md-8 col-xl-4">
+                        <a class="align-items-center align-items-md-start align-items-xl-center" href="#content">
+                            <div>
+                                {{ T "landing_seemore" }}
+                            </div>
+                            <div class="down-arrow">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</div>
+
+<div id="content"></div>
+
+<div class="landing-content body-gradient g-0">
+    <div class="container">
+        <div class="row gx-3 gy-5">
+
+            <div class="col-12 col-lg-6">
+                <div class="landing-box box1">
+                    <div>
+                        <p class="headline">{{ T "landing_box1_headline" }}</p>
+                        <div class="landing-img"></div>
+                        <p class="text">{{ T "landing_box1_text"}}</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="landing-box box2">
+                    <div>
+                        <p class="headline">{{ T "landing_box2_headline" }}</p>
+                        <div class="landing-img"></div>
+                        <p class="text">{{ T "landing_box2_text"}} </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="landing-box box3">
+                    <div>
+                        <p class="headline">{{ T "landing_box3_headline" }}</p>
+                        <div class="landing-img"></div>
+                        <p class="text">{{ T "landing_box3_text"}}</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="landing-box box4">
+                    <div>
+                        <p class="headline">{{ T "landing_box4_headline" }}</p>
+                        <div class="landing-img"></div>
+                        <p class="text">{{ T "landing_box4_text"}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+{{ end }}

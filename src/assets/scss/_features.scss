@@ -1,0 +1,21 @@
+#feature_1_toggle:checked ~ .pills label[for='feature_1_toggle'],
+#feature_2_toggle:checked ~ .pills label[for='feature_2_toggle'],
+#feature_3_toggle:checked ~ .pills label[for='feature_3_toggle'] {
+    border-color: $br-orange;
+}
+
+#feature_1_toggle:checked ~ .feature_descriptions #feature_1,
+#feature_2_toggle:checked ~ .feature_descriptions #feature_2,
+#feature_3_toggle:checked ~ .feature_descriptions #feature_3 {
+    display: block;
+}
+
+.feature_description {
+    display: none;
+    color: $light-gray-text;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 13px;
+    background-color: $dark-blue;
+    transition: display 0.21 ease-in-out;
+}
