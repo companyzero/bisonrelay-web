@@ -1,8 +1,4 @@
 {
-  "general_javascript_warning": "JavaScriptが必要です",
-  "general_javascript_warning_description": "申し訳ありませんが、このウェブサイトを正常に表示するにはJavaScriptを有効にする必要があります。",
   "page_not_found": "ページが見つかりません",
-  "back_to_home_page": "ホームページへ戻る",
-  "notice": "注",
-  "warning": "警告"
+  "back_to_home_page": "ホームページへ戻る"
 }

@@ -2,7 +2,7 @@
     padding-top: 0;
     padding-bottom: 0;
     background-color: $dark-blue;
-
+    font-weight: bold;
     height: $navbar-height;
     
     @include media-breakpoint-down(md) {
@@ -22,6 +22,7 @@
 
         .navbar-nav {
             height: 100%;
+            background-color: $dark-blue;
             
             .nav-link {
                 height: 100%;
@@ -34,10 +35,9 @@
                 line-height: $navbar-height;
                 color: $white;
                 box-sizing: border-box;
-                transition: border-bottom 0.08s ease-in-out;
-                transition: border-left 0.08s ease-in-out;
+                transition: box-shadow 0.13s ease-out;
                 background-color: $dark-blue;
-                border: 2px solid transparent;
+                box-shadow: inset 0 0 0 0 transparent;
                 
                 @include media-breakpoint-down(md) {
                     padding-left: 40px;
@@ -46,18 +46,19 @@
                 }
                 @include media-breakpoint-up(md) {
                     &:hover {
-                        border-bottom: 2px solid $br-orange;
+                        box-shadow: inset 0 -2px 0 0 $br-orange;
                     }
                     &.active {
-                        border-bottom: 2px solid $br-orange;
+                        box-shadow: inset 0 -2px 0 0 $br-orange;
                     }
                 }
                 @include media-breakpoint-down(md) {
+                    margin-left: 0;
                     &:hover {
-                        border-left: 2px solid $br-orange;
+                        box-shadow: inset 2px 0 0 0 $br-orange;
                     }
                     &.active {
-                        border-left: 2px solid $br-orange;
+                        box-shadow: inset 2px 0 0 0 $br-orange;
                     }
                 }
             }

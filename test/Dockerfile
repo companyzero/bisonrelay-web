@@ -1,4 +1,4 @@
-FROM jholdstock/brweb:latest
+FROM companyzero/bisonrelay-web:latest
 
 WORKDIR /root
 

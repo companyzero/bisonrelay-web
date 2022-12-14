@@ -27,12 +27,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ if eq .Section "downloads" }}active{{end}}" href="{{ "/downloads/" | relLangURL }}">
-                            {{ T "nav_downloads" }}
+                        <a class="nav-link {{ if eq .Section "download" }}active{{end}}" href="{{ "/download/" | relLangURL }}">
+                            {{ T "nav_download" }}
                         </a>
                     </li>
-    
-                    <li class="nav-item dropdown">
+
+                    <!--
+                        
+                        Uncomment to enable language selector.
+                        Also need to uncomment languages in config.yml.
+
+                     -->
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <div>{{ .Site.Language.LanguageName }}</div>
                             <div class="icon-lang ms-2"></div>
@@ -46,7 +52,7 @@
                                 {{ end }}
                             {{ end }}
                         </ul>
-                    </li>
+                    </li> -->
     
                 </ul>
             

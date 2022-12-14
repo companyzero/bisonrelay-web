@@ -4,7 +4,7 @@
 bin/build.sh
 
 # build image that contains the content 
-docker build -t jholdstock/brweb-test test
+docker build -t companyzero/bisonrelay-web-test test
 
 echo -n "Starting nu validator "
 
@@ -26,7 +26,7 @@ done
 
 echo
 
-docker run --rm --link validator jholdstock/brweb-test
+docker run --rm --link validator companyzero/bisonrelay-web-test
 
 exit_code=$?
 

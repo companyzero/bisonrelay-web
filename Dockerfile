@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 ARG HUGO_BASEURL
-ENV HUGO_BASEURL ${HUGO_BASEURL:-http://localhost:1234}
+ENV HUGO_BASEURL ${HUGO_BASEURL:-https://bisonrelay.org}
 ENV HUGO_VERSION 0.101.0
 
 LABEL description="gohugo build"
@@ -25,7 +25,7 @@ RUN bin/build-hugo.sh
 # final image
 FROM nginx:1.22
 
-LABEL description="brweb server"
+LABEL description="bisonrelay-web server"
 LABEL version="1.0"
 LABEL maintainer="jholdstock@decred.org"
 

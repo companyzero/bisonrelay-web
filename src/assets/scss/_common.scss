@@ -60,8 +60,15 @@ $bg-grad: linear-gradient(180deg, #05031A8C 0%, #05031AE3 100%);
 }
 
 .subpage-padding {
-    padding-bottom: 123px;
     flex: 1;
+}
+
+.w600 {
+    max-width: 600px;
+}
+
+.w730 {
+    max-width: 730px;
 }
 
 .subpage-header {
@@ -80,9 +87,20 @@ $bg-grad: linear-gradient(180deg, #05031A8C 0%, #05031AE3 100%);
     }
 
     .subpage-title {
-        color: $white;
-        font-family: "brweb-poppins", "Verdana", sans-serif;;
+        color: $light-gray-text;
         font-size: 34px;
+
+        &.lighter {
+            font-weight: 100;
+            @include media-breakpoint-down(md) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    &.center {
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -92,7 +110,6 @@ $bg-grad: linear-gradient(180deg, #05031A8C 0%, #05031AE3 100%);
     flex-wrap: wrap;
     color: $light-gray-text;
     font-size: 15px;
-    margin-bottom: 42px;
     
     @include media-breakpoint-down(md) {
         margin-bottom: 13px;
@@ -107,5 +124,20 @@ $bg-grad: linear-gradient(180deg, #05031A8C 0%, #05031AE3 100%);
         white-space: nowrap;
         transition: border 0.21s ease-in-out;
         cursor: pointer;
+
+        &.small {
+            padding: 9px 15px;
+            font-size: 13px;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 10px;
+            margin-right: 8px;
+            border-width: 1px;
+            
+            &.solid {
+                background-color: $dl-pill-bg;
+                border: none;
+            }
+        }
     }
 }

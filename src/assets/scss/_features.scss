@@ -10,12 +10,15 @@
     display: block;
 }
 
-.feature_description {
-    display: none;
-    color: $light-gray-text;
-    font-size: 15px;
-    line-height: 23px;
-    padding: 13px;
-    background-color: $dark-blue;
-    transition: display 0.21 ease-in-out;
+.feature_descriptions {
+    margin-top: 42px;
+    .feature_description {
+        display: none;
+        color: $light-gray-text;
+        font-size: 15px;
+        line-height: 23px;
+        padding: 13px;
+        background-color: $dark-blue;
+        transition: display 0.21 ease-in-out;
+    }
 }

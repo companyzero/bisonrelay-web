@@ -1,0 +1,183 @@
+.oses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 21px;
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+        justify-content: flex-start;
+    }
+
+    .break-row {
+        @include media-breakpoint-up(md) {
+            flex-basis: 100%;
+            width: 0;
+        }
+    }
+
+    .os {
+        position: relative;
+        background: $os-bg 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        opacity: 1;
+        color: $darker-gray;
+
+        width: 239px;
+        min-height: 154px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        &:nth-of-type(3) { margin-right: 0; }
+        &:nth-of-type(5) { margin-right: 0; }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            cursor: pointer;
+        }
+
+        .the-name {
+            margin-bottom: 21px;
+        }
+        img {
+            height: auto;
+            margin-top: 42px;
+            margin-bottom: 24px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            width: 192px;
+            min-height: 154px;
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 146px;
+            min-height: 154px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            &:nth-of-type(2) { margin-right: 0; }
+            &:nth-of-type(3) { margin-right: 8px; }
+            &:nth-of-type(4) { margin-right: 0; }
+        }
+
+        &.enabled {
+            &:hover {
+                background: $os-hover-bg 0% 0% no-repeat padding-box;
+                color: $light-gray-text;
+            }
+        }
+
+        &.disabled {
+            background: transparent;
+            border: 1px solid $os-disabled;
+            color: $os-disabled;
+            position: relative;
+
+            .coming-soon {
+                font-size: 8px;
+                font-weight: 100;
+                color: $darker-gray;
+                position: absolute;
+                bottom: 2px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// Hide step 2 on page load.
+.os1_step2,
+.os2_step2,
+.os3_step2 {
+    display: none;
+}
+
+// Hide all instructions on page load.
+.os1_gui_instruction,
+.os1_cli_instruction,
+.os2_gui_instruction,
+.os2_cli_instruction,
+.os3_gui_instruction,
+.os3_cli_instruction {
+    display: none;
+}
+
+// When an OS has been selected, hide step 1.
+#os_1_toggle:checked~.step1,
+#os_2_toggle:checked~.step1,
+#os_3_toggle:checked~.step1 {
+    display: none;
+}
+
+// When an OS has been selected, show appropriate step 2.
+#os_1_toggle:checked~.os1_step2,
+#os_2_toggle:checked~.os2_step2,
+#os_3_toggle:checked~.os3_step2 {
+    display: block;
+}
+
+// When an experience has been selected, hide step 2.
+#os1_gui_toggle:checked~.os1_step2,
+#os1_cli_toggle:checked~.os1_step2,
+#os2_gui_toggle:checked~.os2_step2,
+#os2_cli_toggle:checked~.os2_step2,
+#os3_gui_toggle:checked~.os3_step2,
+#os3_cli_toggle:checked~.os3_step2 {
+    display: none;
+}
+
+// When an experience has been selected, show appropriate step 3.
+#os1_gui_toggle:checked~.os1_gui_instruction,
+#os1_cli_toggle:checked~.os1_cli_instruction,
+#os2_gui_toggle:checked~.os2_gui_instruction,
+#os2_cli_toggle:checked~.os2_cli_instruction,
+#os3_gui_toggle:checked~.os3_gui_instruction,
+#os3_cli_toggle:checked~.os3_cli_instruction {
+    display: block;
+}
+
+.dl-instructions {
+    
+    max-width: 750px;
+    margin: 0 auto;
+
+    .small-header {
+        color: $darker-gray;
+        font-size: 15px;
+    }
+    .subtext {
+        font-size: 13px;
+        color: $darker-gray;
+    }
+    .dl-instruction {
+        background: $footer-bg 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        color: $light-gray-text;
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 13px;
+        margin-bottom: 34px;
+        padding: 16px;
+
+        .codeblock {
+            @extend .brwebcode;
+            color: $br-orange;
+            font-size: 13px;
+            margin: 8px;
+            padding: 10px;
+            background: #05031A57 0% 0% no-repeat padding-box;
+            border-radius: 3px;
+        }
+    }
+}

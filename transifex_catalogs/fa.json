@@ -1,7 +1,4 @@
 {
-  "general_javascript_warning": "جاوااسکریپت لازم است",
-  "general_javascript_warning_description": "متأسفیم، اما این وب‌سایت بدون فعال بودن جاوااسکریپت درست کار نمی‌کند.",
   "page_not_found": "صفحه پیدا نشد",
-  "back_to_home_page": "برگشت به صفحه اصلی",
-  "notice": "توجه"
+  "back_to_home_page": "برگشت به صفحه اصلی"
 }

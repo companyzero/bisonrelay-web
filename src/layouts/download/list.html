@@ -1,0 +1,102 @@
+{{ define "page-title" }}
+{{ T "bison_relay" }} — {{ T "nav_download" }}
+{{ end }}
+
+{{ define "main" }}
+
+{{ $apple := resources.Get "images/dl-icons/apple.svg" }}
+{{ $appde := resources.Get "images/dl-icons/apple-disabled.svg" }}
+{{ $win   := resources.Get "images/dl-icons/windows.svg" }}
+{{ $linux := resources.Get "images/dl-icons/linux.svg" }}
+{{ $andr  := resources.Get "images/dl-icons/android.svg" }}
+
+<div class="subpage-padding body-img-gradient g-0">
+    <div class="container">
+
+        <input class="d-none" type="radio" id="os_1_toggle" name="os_toggler" />
+        <input class="d-none" type="radio" id="os_2_toggle" name="os_toggler" />
+        <input class="d-none" type="radio" id="os_3_toggle" name="os_toggler" />
+
+        <div class="step1">
+
+            <div class="subpage-header center">
+                <div class="subpage-title lighter">{{ T "os_choose_your_os" }}</div>
+            </div>
+
+            <div class="oses">
+
+                <div class="os enabled">
+                    <label for="os_1_toggle">
+                    </label>
+                    <img class="os-logo" src="{{ $win.RelPermalink }}" alt="Windows logo">
+                    <div class="the-name">
+                        {{ T "os_1_name" }}
+                    </div>
+                </div>
+
+                <div class="os enabled">
+                    <label for="os_2_toggle">
+                    </label>
+                    <img class="os-logo" src="{{ $apple.RelPermalink }}" alt="Apple logo">
+                    <div class="the-name">
+                        {{ T "os_2_name" }}
+                    </div>
+                </div>
+
+                <div class="os enabled">
+                    <label for="os_3_toggle">
+                    </label>
+                    <img class="os-logo" src="{{ $linux.RelPermalink }}" alt="Linux logo">
+                    <div class="the-name">
+                        {{ T "os_3_name" }}
+                    </div>
+                </div>
+
+                <div class="break-row"></div>
+
+                <div class="os disabled">
+                    <img class="os-logo" src="{{ $andr.RelPermalink }}" alt="Android logo">
+                    <div class="the-name">
+                        {{ T "os_4_name" }}
+                    </div>
+                    <div class="coming-soon">{{ T "os_coming_soon" }}</div>
+                </div>
+
+                <div class="os disabled">
+                    <img class="os-logo" src="{{ $appde.RelPermalink }}" alt="Apple logo">
+                    <div class="the-name">
+                        {{ T "os_5_name" }}
+                    </div>
+                    <div class="coming-soon">{{ T "os_coming_soon" }}</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        {{ partial "os-experience.html" (dict "os" "os1") }}
+        {{ partial "os-experience.html" (dict "os" "os2") }}
+        {{ partial "os-experience.html" (dict "os" "os3") }}
+
+        <div class="os1_gui_instruction">
+            {{ partial "dl-cli-linux.html"}}
+        </div>
+        <div class="os1_cli_instruction">
+            {{ partial "dl-cli-linux.html"}}
+        </div>
+        <div class="os2_gui_instruction">
+            {{ partial "dl-cli-linux.html"}}
+        </div>
+        <div class="os2_cli_instruction">
+            {{ partial "dl-cli-linux.html"}}
+        </div>
+        <div class="os3_gui_instruction">
+            {{ partial "dl-cli-linux.html"}}
+        </div>
+        <div class="os3_cli_instruction">
+            {{ partial "dl-cli-linux.html"}}
+        </div>
+    </div>
+</div>
+
+{{end}}

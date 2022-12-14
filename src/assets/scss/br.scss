@@ -4,6 +4,10 @@ $light-gray-text: #E4E3E6;
 $darker-gray:     #8E8D98;
 $footer-bg:       #121026;
 $dark-blue:       #05031A;
+$os-bg:           #19172C;
+$os-disabled:     #5A5968; 
+$os-hover-bg:     #252438;
+$dl-pill-bg:      #3A384B;
 $white:           rgb(255, 255, 255); // #FFFFFF
 
 $navbar-height: 89px;
@@ -40,4 +44,5 @@ $container-max-widths: (
 @import "_footer";
 @import "_landing";
 @import "_features";
+@import "_download";
 @import "_fonts";

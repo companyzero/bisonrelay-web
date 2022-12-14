@@ -1,8 +1,4 @@
 {
-  "general_javascript_warning": "Se necesita JavaScript",
-  "general_javascript_warning_description": "Lo sentimos, pero este sitio web no funciona correctamente si no se activa JavaScript.",
   "page_not_found": "Página no encontrada",
-  "back_to_home_page": "Volver al inicio",
-  "notice": "Aviso",
-  "warning": "Advertencia"
+  "back_to_home_page": "Volver al inicio"
 }

@@ -1,8 +1,4 @@
 {
-  "general_javascript_warning": "Wymagane środowisko JavaScript",
-  "general_javascript_warning_description": "Przykro nam, ale ta strona nie działa prawidłowo bez włączonego środowiska JavaScript.",
   "page_not_found": "Nie znaleziono strony",
-  "back_to_home_page": "Powrót do strony głównej",
-  "notice": "Uwaga",
-  "warning": "Ostrzeżenie"
+  "back_to_home_page": "Powrót do strony głównej"
 }
