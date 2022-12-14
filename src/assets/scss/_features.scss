@@ -1,18 +1,33 @@
 #feature_1_toggle:checked ~ .pills label[for='feature_1_toggle'],
 #feature_2_toggle:checked ~ .pills label[for='feature_2_toggle'],
-#feature_3_toggle:checked ~ .pills label[for='feature_3_toggle'] {
+#feature_3_toggle:checked ~ .pills label[for='feature_3_toggle'],
+#feature_4_toggle:checked ~ .pills label[for='feature_4_toggle'] {
     border-color: $br-orange;
 }
 
 #feature_1_toggle:checked ~ .feature_descriptions #feature_1,
 #feature_2_toggle:checked ~ .feature_descriptions #feature_2,
-#feature_3_toggle:checked ~ .feature_descriptions #feature_3 {
+#feature_3_toggle:checked ~ .feature_descriptions #feature_3,
+#feature_4_toggle:checked ~ .feature_descriptions #feature_4 {
     display: block;
 }
 
+.feature_intro {
+    color: $light-gray-text;
+    background-color: $dark-blue;
+    padding: 13px;
+    margin-bottom: 42px;
+    p {
+        padding: 0;
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
 .feature_descriptions {
-    margin-top: 42px;
     .feature_description {
+        margin-top: 42px;
+        margin-bottom: 82px;
         display: none;
         color: $light-gray-text;
         font-size: 15px;
@@ -20,5 +35,9 @@
         padding: 13px;
         background-color: $dark-blue;
         transition: display 0.21 ease-in-out;
+        ul {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
 }

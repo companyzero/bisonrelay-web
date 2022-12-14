@@ -14,6 +14,12 @@
         <input class="d-none" type="radio" id="feature_1_toggle" name="feature_toggler" checked />
         <input class="d-none" type="radio" id="feature_2_toggle" name="feature_toggler" />
         <input class="d-none" type="radio" id="feature_3_toggle" name="feature_toggler" />
+        <input class="d-none" type="radio" id="feature_4_toggle" name="feature_toggler" />
+
+        <div class="feature_intro">
+            <p>{{ T "feature_intro_p1" }}</p>
+            <p>{{ T "feature_intro_p2" }}</p>
+        </div>
 
         <div class="pills">
             <label class="pill" for="feature_1_toggle">
@@ -24,6 +30,9 @@
             </label>
             <label class="pill" for="feature_3_toggle">
                 {{ T "feature_3_name" }}
+            </label>
+            <label class="pill" for="feature_4_toggle">
+                {{ T "feature_4_name" }}
             </label>
         </div>
 
@@ -38,6 +47,20 @@
     
             <div class="feature_description" id="feature_3">
                 {{ T "feature_3_description" }}
+            </div>
+            <div class="feature_description" id="feature_4">
+                {{ T "feature_4_description_p1" }}
+                <ul>
+                    <li>{{ T "feature_4_description_list1" }}</li>
+                    <li>{{ T "feature_4_description_list2" }}</li>
+                    <li>{{ T "feature_4_description_list3" }}</li>
+                    <li>{{ T "feature_4_description_list4" }}</li>
+                    <li>{{ T "feature_4_description_list5" }}</li>
+                    <li>{{ T "feature_4_description_list6" }}</li>
+                    <li>{{ T "feature_4_description_list7" }}</li>
+                    <li>{{ T "feature_4_description_list8" }}</li>
+                </ul>
+                {{ T "feature_4_description_p2" }}
             </div>
         </div>
 
