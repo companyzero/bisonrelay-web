@@ -156,16 +156,6 @@ $landing-grad: linear-gradient(180deg, #05031A00 0%, #05031A00 60%, #05031AE3 85
             opacity: 0.8;
             transition: opacity 0.08s ease-in-out;
 
-            .down-arrow {
-                margin-top: 8px;
-                height: 69px;
-                width: 69px;
-                background-image: url("../images/white-down-arrow.svg");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center center;
-            }
-
             &:hover,
             &:focus {
                 opacity: 1.0;

@@ -41,8 +41,30 @@
                             <div>
                                 {{ T "landing_seemore" }}
                             </div>
-                            <div class="down-arrow">
-                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="80" viewBox="0 0 70 80">
+                                <defs>
+                                    <style>
+                                        svg {
+                                            overflow: hidden;
+                                        }
+                                        svg g {
+                                            transform: translateY(-10px);
+                                            transition: all 0.21s ease-out;
+                                        }
+                                        svg:hover g {
+                                            transform: translateY(0px);
+                                        }
+                                        .a, .b { fill:none; }
+                                        .a { stroke: #e4e3e6; }
+                                        .b { stroke: #e4e3e6; }
+                                    </style>
+                                </defs>
+                                <g transform="translate(0.354)">
+                                    <line class="a" x2="34.5" y2="34.5" transform="translate(34.5 78) rotate(-90)"/>
+                                    <line class="a" y1="34.5" x2="34.5" transform="translate(0 78) rotate(-90)"/>
+                                    <line class="b" y1="78" transform="translate(34.5)"/>
+                                </g>
+                            </svg>
                         </a>
                     </div>
 
