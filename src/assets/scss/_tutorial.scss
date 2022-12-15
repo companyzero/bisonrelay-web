@@ -1,7 +1,7 @@
-.howto {
+.tutorial {
     padding-bottom: 100px;
     
-    .howto_image {
+    .tutorial_image {
         width: 100%;
     }
 
@@ -14,14 +14,14 @@
         }
     }
 
-    .howto_title {
+    .tutorial_title {
         font-size: 18px;
         color: $light-gray-text;
         padding: 12px;
         font-weight: bold;
     }
 
-    .howto_text {
+    .tutorial_text {
         color: $darker-gray;
         padding: 12px;
         padding-bottom: 24px;
