@@ -12,6 +12,8 @@
 {{ $img6 := resources.Get "images/screenshots/6-choosenick.png" }}
 {{ $img7 := resources.Get "images/screenshots/7-needout.png" }}
 {{ $img8 := resources.Get "images/screenshots/8-needin.png" }}
+{{ $img9 := resources.Get "images/screenshots/9-generateInvite.png" }}
+{{ $img10 := resources.Get "images/screenshots/10-loadInvite.png" }}
 
 <div class="subpage-padding body-img-gradient g-0">
     <div class="container">
@@ -134,6 +136,33 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="tutorial_title">
+                        9. {{ T "tutorial_title_9"}}
+                    </div>
+                    <div class="tutorial_text">
+                        {{ T "tutorial_text_9"}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <img class="tutorial_image" src="{{ $img9.RelPermalink }}" alt="needout">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xl-5 order-xl-last">
+                    <div class="tutorial_title">
+                        10. {{ T "tutorial_title_10"}}
+                    </div>
+                    <div class="tutorial_text">
+                        {{ T "tutorial_text_10"}}
+                    </div>
+                </div>
+                <div class="col-xl-7 order-xl-first">
+                    <img class="tutorial_image" src="{{ $img10.RelPermalink }}" alt="needin">
+                </div>
+            </div>
         </div>
 
     </div>

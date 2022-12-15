@@ -71,5 +71,9 @@
   "tutorial_title_7": "Outbound Channel Required",
   "tutorial_text_7": "To begin communicating with others you must first establish an outbound channel on the Lightning Network.",
   "tutorial_title_8": "Inbound Channel Required",
-  "tutorial_text_8": "To be able to receive funds or be paid for content you provide to others you can choose to create an inbound channel on the Lightning Network."
+  "tutorial_text_8": "To be able to receive funds or be paid for content you provide to others you can choose to create an inbound channel on the Lightning Network.",
+  "tutorial_title_9": "Generate Invite",
+  "tutorial_text_9": "To communicate with another current user of Bison Relay you can generate an invite and transmit to them via email/other secure method.",
+  "tutorial_title_10": "Load Invite",
+  "tutorial_text_10": "If you have received an invite you may load it as well."
 }
