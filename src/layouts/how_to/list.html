@@ -1,14 +1,139 @@
 {{ define "page-title" }}
-    {{ T "bison_relay" }} — {{ T "nav_how_to" }}
+{{ T "bison_relay" }} — {{ T "nav_how_to" }}
 {{ end }}
 
 {{ define "main" }}
 
+{{ $img1 := resources.Get "images/screenshots/1-createpass.png" }}
+{{ $img2 := resources.Get "images/screenshots/2-copyseed.png" }}
+{{ $img3 := resources.Get "images/screenshots/3-networksync.png" }}
+{{ $img4 := resources.Get "images/screenshots/4-connectserver.png" }}
+{{ $img5 := resources.Get "images/screenshots/5-fundsneeded.png" }}
+{{ $img6 := resources.Get "images/screenshots/6-choosenick.png" }}
+{{ $img7 := resources.Get "images/screenshots/7-needout.png" }}
+{{ $img8 := resources.Get "images/screenshots/8-needin.png" }}
+
 <div class="subpage-padding body-img-gradient g-0">
     <div class="container">
-        
+
         <div class="subpage-header">
             <div class="subpage-title">{{ T "page_title_how_to" }}</div>
+        </div>
+        
+        <div class="howto">
+
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="howto_title">
+                        1. {{ T "how_to_title_1"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_1"}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <img class="howto_image" src="{{ $img1.RelPermalink }}" alt="createpass">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xl-5 order-xl-last">
+                    <div class="howto_title">
+                        2. {{ T "how_to_title_2"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_2"}}
+                    </div>
+                </div>
+                <div class="col-xl-7 order-xl-first">
+                    <img class="howto_image" src="{{ $img2.RelPermalink }}" alt="copyseed">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="howto_title">
+                        3. {{ T "how_to_title_3"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_3"}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <img class="howto_image" src="{{ $img3.RelPermalink }}" alt="networksync">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xl-5 order-xl-last">
+                    <div class="howto_title">
+                        4. {{ T "how_to_title_4"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_4"}}
+                    </div>
+                </div>
+                <div class="col-xl-7 order-xl-first">
+                    <img class="howto_image" src="{{ $img4.RelPermalink }}" alt="connectserver">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="howto_title">
+                        5. {{ T "how_to_title_5"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_5"}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <img class="howto_image" src="{{ $img5.RelPermalink }}" alt="fundsneeded">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xl-5 order-xl-last">
+                    <div class="howto_title">
+                        6. {{ T "how_to_title_6"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_6"}}
+                    </div>
+                </div>
+                <div class="col-xl-7 order-xl-first">
+                    <img class="howto_image" src="{{ $img6.RelPermalink }}" alt="choosenick">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="howto_title">
+                        7. {{ T "how_to_title_7"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_7"}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <img class="howto_image" src="{{ $img7.RelPermalink }}" alt="needout">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xl-5 order-xl-last">
+                    <div class="howto_title">
+                        8. {{ T "how_to_title_8"}}
+                    </div>
+                    <div class="howto_text">
+                        {{ T "how_to_text_8"}}
+                    </div>
+                </div>
+                <div class="col-xl-7 order-xl-first">
+                    <img class="howto_image" src="{{ $img8.RelPermalink }}" alt="needin">
+                </div>
+            </div>
+
         </div>
 
     </div>

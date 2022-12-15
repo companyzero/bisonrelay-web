@@ -1,0 +1,29 @@
+.howto {
+    padding-bottom: 100px;
+    
+    .howto_image {
+        width: 100%;
+    }
+
+    .row {
+        margin-top: 24px;
+        margin-bottom: 104px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 54px;
+        }
+    }
+
+    .howto_title {
+        font-size: 18px;
+        color: $light-gray-text;
+        padding: 12px;
+        font-weight: bold;
+    }
+
+    .howto_text {
+        color: $darker-gray;
+        padding: 12px;
+        padding-bottom: 24px;
+    }
+}
