@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ if eq .Section "download" }}active{{end}}" href="{{ "/download/" | relLangURL }}">
+                        <a class="nav-link {{ if eq .Section "download" }}active{{end}}" href="{{ $.Site.Data.download_links.link }}" target="_blank" rel="noopener noreferrer">
                             {{ T "nav_download" }}
                         </a>
                     </li>
