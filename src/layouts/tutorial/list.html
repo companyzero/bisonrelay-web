@@ -4,14 +4,16 @@
 
 {{ define "main" }}
 
-{{ $img1 := resources.Get "images/screenshots/1-createpass.png" }}
-{{ $img2 := resources.Get "images/screenshots/2-copyseed.png" }}
-{{ $img3 := resources.Get "images/screenshots/3-networksync.png" }}
-{{ $img4 := resources.Get "images/screenshots/4-connectserver.png" }}
-{{ $img5 := resources.Get "images/screenshots/5-fundsneeded.png" }}
-{{ $img6 := resources.Get "images/screenshots/6-choosenick.png" }}
-{{ $img7 := resources.Get "images/screenshots/7-needout.png" }}
-{{ $img8 := resources.Get "images/screenshots/8-needin.png" }}
+{{ $img1  := resources.Get "images/screenshots/1-createpass.png" }}
+{{ $img2  := resources.Get "images/screenshots/2-copyseed.png" }}
+{{ $img3  := resources.Get "images/screenshots/3-networksync.png" }}
+{{ $img4  := resources.Get "images/screenshots/4-connectserver.png" }}
+{{ $img5  := resources.Get "images/screenshots/5-fundsneeded.png" }}
+{{ $img6  := resources.Get "images/screenshots/6-choosenick.png" }}
+{{ $img7  := resources.Get "images/screenshots/7-needout.png" }}
+{{ $img8  := resources.Get "images/screenshots/8-needin.png" }}
+{{ $img9  := resources.Get "images/screenshots/9-generateinvite.png" }}
+{{ $img10 := resources.Get "images/screenshots/10-loadinvite.png" }}
 
 <div class="subpage-padding body-img-gradient g-0">
     <div class="container">
@@ -19,7 +21,7 @@
         <div class="subpage-header">
             <div class="subpage-title">{{ T "page_title_tutorial" }}</div>
         </div>
-        
+
         <div class="tutorial">
 
             <div class="row">
@@ -35,7 +37,7 @@
                     <img class="tutorial_image" src="{{ $img1.RelPermalink }}" alt="createpass">
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="col-xl-5 order-xl-last">
                     <div class="tutorial_title">
@@ -49,7 +51,7 @@
                     <img class="tutorial_image" src="{{ $img2.RelPermalink }}" alt="copyseed">
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-xl-5">
                     <div class="tutorial_title">
@@ -63,7 +65,7 @@
                     <img class="tutorial_image" src="{{ $img3.RelPermalink }}" alt="networksync">
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="col-xl-5 order-xl-last">
                     <div class="tutorial_title">
@@ -91,7 +93,7 @@
                     <img class="tutorial_image" src="{{ $img5.RelPermalink }}" alt="fundsneeded">
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="col-xl-5 order-xl-last">
                     <div class="tutorial_title">
@@ -119,7 +121,7 @@
                     <img class="tutorial_image" src="{{ $img7.RelPermalink }}" alt="needout">
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="col-xl-5 order-xl-last">
                     <div class="tutorial_title">
@@ -134,6 +136,33 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="tutorial_title">
+                        9. {{ T "tutorial_title_9"}}
+                    </div>
+                    <div class="tutorial_text">
+                        {{ T "tutorial_text_9"}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <img class="tutorial_image" src="{{ $img9.RelPermalink }}" alt="needout">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-5 order-xl-last">
+                    <div class="tutorial_title">
+                        10. {{ T "tutorial_title_10"}}
+                    </div>
+                    <div class="tutorial_text">
+                        {{ T "tutorial_text_10"}}
+                    </div>
+                </div>
+                <div class="col-xl-7 order-xl-first">
+                    <img class="tutorial_image" src="{{ $img10.RelPermalink }}" alt="needin">
+                </div>
+            </div>
         </div>
 
     </div>
