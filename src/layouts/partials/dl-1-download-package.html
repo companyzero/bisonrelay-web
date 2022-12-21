@@ -1,0 +1,19 @@
+<div class="small-header">1. Download Software Package</div>
+<div class="dl-instruction d-inline-block">
+    <div class="pills">
+
+        {{ range .links }}
+            <a class="pill small solid" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+                {{ .os }} {{ .arch }}
+            </a>
+        {{ end }}
+
+        <div class="pill small">
+            Release Notes
+        </div>
+
+    </div>
+    <div class="subtext">
+        {{ .msg }}
+    </div>
+</div>

@@ -17,7 +17,7 @@
         <input class="d-none" type="radio" id="os_2_toggle" name="os_toggler" />
         <input class="d-none" type="radio" id="os_3_toggle" name="os_toggler" />
 
-        <div class="step1">
+        <div id="step1">
 
             <div class="subpage-header center">
                 <div class="subpage-title lighter">{{ T "os_choose_your_os" }}</div>
@@ -78,24 +78,89 @@
         {{ partial "os-experience.html" (dict "os" "os2") }}
         {{ partial "os-experience.html" (dict "os" "os3") }}
 
-        <div class="os1_gui_instruction">
-            {{ partial "dl-cli-linux.html"}}
+        <div id="step3">
+            <div class="subpage-header center">
+                <div class="subpage-title w730 lighter">{{ T "os_download_client" }}</div>
+            </div>
+            
+            <div class="dl-instructions">
+
+                <div class="os1_gui_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "links" $.Site.Data.download_links.windows.gui
+                            "msg" "GUI client for Windows"
+                        )
+                    }}
+                    {{ partial "dl-2-win-gui-install.html" }}
+                </div>
+                <div class="os1_cli_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "links" $.Site.Data.download_links.windows.cli
+                            "msg" "CLI client for Windows"
+                        )
+                    }}
+                    {{ partial "dl-2-win-cli-install.html"
+                        (dict
+                            "filename" ( index $.Site.Data.download_links.windows.cli 0).filename
+                        )
+                    }}
+                </div>
+                <div class="os2_gui_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "links" $.Site.Data.download_links.macos.gui
+                            "msg" "GUI client for MacOS"
+                        )
+                    }}
+                    {{ partial "dl-2-mac-gui-install.html" }}
+                </div>
+                <div class="os2_cli_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "links" $.Site.Data.download_links.macos.cli
+                            "msg" "CLI client for MacOS"
+                        )
+                    }}
+                    {{ partial "dl-2-mac-cli-install.html" 
+                        (dict
+                            "filename" ( index $.Site.Data.download_links.macos.cli 0).filename
+                        )
+                    }}
+                </div>
+                <div class="os3_gui_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "links" $.Site.Data.download_links.linux.gui
+                            "msg" "GUI client for Linux"
+                        )
+                    }}
+                    {{ partial "dl-2-linux-gui-install.html" }}
+                </div>
+                <div class="os3_cli_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "links" $.Site.Data.download_links.linux.cli
+                            "msg" "CLI client for Linux"
+                        )
+                    }}
+                    {{ partial "dl-2-linux-cli-install.html"
+                        (dict
+                            "filename" ( index $.Site.Data.download_links.linux.cli 0).filename
+                        )
+                    }}
+                </div>
+
+                <div class="small-header">3. Get Connected</div>
+                <div class="dl-instruction">
+                    Follow the <a href="{{ "/tutorial/" | relLangURL }}">Tutorial</a>
+                    to create your Bison Relay identity and connect to the network.
+                </div>
+                
+            </div>
         </div>
-        <div class="os1_cli_instruction">
-            {{ partial "dl-cli-linux.html"}}
-        </div>
-        <div class="os2_gui_instruction">
-            {{ partial "dl-cli-linux.html"}}
-        </div>
-        <div class="os2_cli_instruction">
-            {{ partial "dl-cli-linux.html"}}
-        </div>
-        <div class="os3_gui_instruction">
-            {{ partial "dl-cli-linux.html"}}
-        </div>
-        <div class="os3_cli_instruction">
-            {{ partial "dl-cli-linux.html"}}
-        </div>
+
     </div>
 </div>
 
