@@ -1,1 +1,51 @@
-link: "https://github.com/companyzero/bisonrelay/releases"
+macos:
+  cli:
+    -
+      os: MacOS
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/brclient-darwin-amd64-0.1.1"
+      filename: "brclient-darwin-amd64-0.1.1"
+    -
+      os: MacOS
+      arch: arm64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/brclient-darwin-arm64-0.1.1"
+    
+  gui:
+    -
+      os: MacOS
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/bisonrelay-darwin-amd64-0.1.1.zip"
+
+linux:
+  cli:
+    -
+      os: Linux
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/brclient-linux-amd64-0.1.1"
+      filename: "brclient-linux-amd64-0.1.1"
+    -
+      os: Linux
+      arch: arm64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/brclient-linux-arm64-0.1.1"
+  gui:
+    -
+      os: Ubuntu/Debian
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/bisonrelay-debian-amd64-0.1.1.tar"
+    -
+      os: Fedora
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/bisonrelay-fedora-amd64-0.1.1.tar"
+
+windows:
+  cli:
+    -
+      os: Windows
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/brclient-windows-amd64-0.1.1.exe"
+      filename: "brclient-windows-amd64-0.1.1.exe"
+  gui:
+    -
+      os: Windows
+      arch: amd64
+      url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.1/bisonrelay-windows-amd64-0.1.1.msix"
