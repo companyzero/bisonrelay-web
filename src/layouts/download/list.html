@@ -88,8 +88,8 @@
                 <div class="os1_gui_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
-                            "links" $.Site.Data.download_links.windows.gui
-                            "msg" "GUI client for Windows"
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.windows.gui
                         )
                     }}
                     {{ partial "dl-2-win-gui-install.html" }}
@@ -97,21 +97,21 @@
                 <div class="os1_cli_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
-                            "links" $.Site.Data.download_links.windows.cli
-                            "msg" "CLI client for Windows"
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.windows.cli
                         )
                     }}
                     {{ partial "dl-2-win-cli-install.html"
                         (dict
-                            "filename" ( index $.Site.Data.download_links.windows.cli 0).filename
+                            "filename" $.Site.Data.download_links.windows.cli.example_filename
                         )
                     }}
                 </div>
                 <div class="os2_gui_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
-                            "links" $.Site.Data.download_links.macos.gui
-                            "msg" "GUI client for MacOS"
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.macos.gui
                         )
                     }}
                     {{ partial "dl-2-mac-gui-install.html" }}
@@ -119,21 +119,21 @@
                 <div class="os2_cli_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
-                            "links" $.Site.Data.download_links.macos.cli
-                            "msg" "CLI client for MacOS"
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.macos.cli
                         )
                     }}
                     {{ partial "dl-2-mac-cli-install.html" 
                         (dict
-                            "filename" ( index $.Site.Data.download_links.macos.cli 0).filename
+                            "filename" $.Site.Data.download_links.macos.cli.example_filename
                         )
                     }}
                 </div>
                 <div class="os3_gui_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
-                            "links" $.Site.Data.download_links.linux.gui
-                            "msg" "GUI client for Linux"
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.linux.gui
                         )
                     }}
                     {{ partial "dl-2-linux-gui-install.html" }}
@@ -141,13 +141,13 @@
                 <div class="os3_cli_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
-                            "links" $.Site.Data.download_links.linux.cli
-                            "msg" "CLI client for Linux"
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.linux.cli
                         )
                     }}
                     {{ partial "dl-2-linux-cli-install.html"
                         (dict
-                            "filename" ( index $.Site.Data.download_links.linux.cli 0).filename
+                            "filename" $.Site.Data.download_links.linux.cli.example_filename
                         )
                     }}
                 </div>
