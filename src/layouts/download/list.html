@@ -88,6 +88,7 @@
                 <div class="os1_gui_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.windows.gui
                         )
                     }}
@@ -96,6 +97,7 @@
                 <div class="os1_cli_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.windows.cli
                         )
                     }}
@@ -108,6 +110,7 @@
                 <div class="os2_gui_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.macos.gui
                         )
                     }}
@@ -116,6 +119,7 @@
                 <div class="os2_cli_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.macos.cli
                         )
                     }}
@@ -128,6 +132,7 @@
                 <div class="os3_gui_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.linux.gui
                         )
                     }}
@@ -136,6 +141,7 @@
                 <div class="os3_cli_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.linux.cli
                         )
                     }}
