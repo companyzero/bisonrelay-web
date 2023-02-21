@@ -2,7 +2,7 @@
 <div class="dl-instruction d-inline-block">
     <div class="pills">
 
-        {{ range .links }}
+        {{ range .platform.links }}
             <a class="pill small solid" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
                 {{ .os }} {{ .arch }}
             </a>
@@ -14,6 +14,6 @@
 
     </div>
     <div class="subtext">
-        {{ .msg }}
+        {{ .platform.msg }}
     </div>
 </div>
