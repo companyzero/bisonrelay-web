@@ -1,23 +1,23 @@
 release_notes: "https://github.com/companyzero/bisonrelay/releases/tag/v0.1.7"
 macos:
   cli:
-    msg: "CLI client for MacOS"
+    msg: "CLI client for macOS"
     example_filename: "brclient-darwin-amd64-0.1.7"
     links:
       -
-        os: MacOS
+        os: macOS
         arch: amd64
         url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.7/brclient-darwin-amd64-v0.1.7"
       -
-        os: MacOS
+        os: macOS
         arch: arm64
         url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.7/brclient-darwin-arm64-v0.1.7"
     
   gui:
-    msg: "GUI client for MacOS"
+    msg: "GUI client for macOS"
     links:
       -
-        os: MacOS
+        os: macOS
         arch: amd64
         url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.7/bisonrelay-darwin-amd64-v0.1.7.zip"
 
