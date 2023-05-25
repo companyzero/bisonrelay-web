@@ -19,7 +19,7 @@ macos:
       -
         os: macOS
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.7/bisonrelay-darwin-amd64-v0.1.7.zip"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.7/BisonRelay-darwin-amd64-v0.1.7.dmg"
 
 linux:
   cli:
