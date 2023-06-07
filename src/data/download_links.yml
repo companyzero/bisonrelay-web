@@ -2,7 +2,7 @@ release_notes: "https://github.com/companyzero/bisonrelay/releases/tag/v0.1.7"
 macos:
   cli:
     msg: "CLI client for macOS"
-    example_filename: "brclient-darwin-amd64-0.1.7"
+    example_filename: "brclient-darwin-amd64-v0.1.7"
     links:
       -
         os: macOS
@@ -24,7 +24,7 @@ macos:
 linux:
   cli:
     msg: "CLI client for Linux"
-    example_filename: "brclient-linux-amd64-0.1.7"
+    example_filename: "brclient-linux-amd64-v0.1.7"
     links:
       -
         os: Linux
@@ -49,7 +49,7 @@ linux:
 windows:
   cli:
     msg: "CLI client for Windows"
-    example_filename: "brclient-windows-amd64-0.1.7.exe"
+    example_filename: "brclient-windows-amd64-v0.1.7.exe"
     links:
       -
         os: Windows
