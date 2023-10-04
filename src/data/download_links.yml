@@ -61,4 +61,4 @@ windows:
       -
         os: Windows
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/bisonrelay-windows-amd64-v0.1.9.msix"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/bisonrelay-windows-amd64-v0.1.9.exe"
