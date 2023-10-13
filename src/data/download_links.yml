@@ -1,17 +1,17 @@
-release_notes: "https://github.com/companyzero/bisonrelay/releases/tag/v0.1.8"
+release_notes: "https://github.com/companyzero/bisonrelay/releases/tag/v0.1.9"
 macos:
   cli:
     msg: "CLI client for macOS"
-    example_filename: "brclient-darwin-amd64-0.1.8"
+    example_filename: "brclient-darwin-amd64-v0.1.9"
     links:
       -
         os: macOS
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/brclient-darwin-amd64-0.1.8"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/brclient-darwin-amd64-v0.1.9"
       -
         os: macOS
         arch: arm64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/brclient-darwin-arm64-0.1.8"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/brclient-darwin-arm64-v0.1.9"
     
   gui:
     msg: "GUI client for macOS"
@@ -19,46 +19,46 @@ macos:
       -
         os: macOS
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/BisonRelay-darwin-amd64-v0.1.8.dmg"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/BisonRelay-darwin-amd64-v0.1.9.dmg"
 
 linux:
   cli:
     msg: "CLI client for Linux"
-    example_filename: "brclient-linux-amd64-0.1.8"
+    example_filename: "brclient-linux-amd64-v0.1.9"
     links:
       -
         os: Linux
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/brclient-linux-amd64-0.1.8"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/brclient-linux-amd64-v0.1.9"
       -
         os: Linux
         arch: arm64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/brclient-linux-arm64-0.1.8"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/brclient-linux-arm64-v0.1.9"
   gui:
     msg: "GUI client for Linux"
     links:
       -
         os: Ubuntu/Debian
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/BisonRelay-v0.1.8.AppImage"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/BisonRelay-v0.1.9.AppImage"
       -
         os: Other Linux
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/bisonrelay-linux-amd64-v0.1.8.tar.gz"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/bisonrelay-linux-amd64-v0.1.9.tar.gz"
 
 windows:
   cli:
     msg: "CLI client for Windows"
-    example_filename: "brclient-windows-amd64-0.1.8.exe"
+    example_filename: "brclient-windows-amd64-v0.1.9.exe"
     links:
       -
         os: Windows
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/brclient-windows-amd64-0.1.8.exe"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/brclient-windows-amd64-v0.1.9.exe"
   gui:
     msg: "GUI client for Windows"
     links:
       -
         os: Windows
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.8/bisonrelay-windows-amd64-v0.1.8.msix"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.9/bisonrelay-windows-amd64-v0.1.9.exe"
