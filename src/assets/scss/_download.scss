@@ -99,7 +99,8 @@
 // Hide step 2 on page load.
 .os1_step2,
 .os2_step2,
-.os3_step2 {
+.os3_step2,
+.os4_step2 {
     display: none;
 }
 
@@ -110,21 +111,25 @@
 .os2_gui_instruction,
 .os2_cli_instruction,
 .os3_gui_instruction,
-.os3_cli_instruction {
+.os3_cli_instruction,
+.os4_gui_instruction,
+.os4_cli_instruction {
     display: none;
 }
 
 // When an OS has been selected, hide step 1.
 #os_1_toggle:checked~#step1,
 #os_2_toggle:checked~#step1,
-#os_3_toggle:checked~#step1 {
+#os_3_toggle:checked~#step1,
+#os_4_toggle:checked~#step1 {
     display: none;
 }
 
 // When an OS has been selected, show appropriate step 2.
 #os_1_toggle:checked~.os1_step2,
 #os_2_toggle:checked~.os2_step2,
-#os_3_toggle:checked~.os3_step2 {
+#os_3_toggle:checked~.os3_step2,
+#os_4_toggle:checked~.os3_step2 {
     display: block;
 }
 
@@ -134,7 +139,9 @@
 #os2_gui_toggle:checked~.os2_step2,
 #os2_cli_toggle:checked~.os2_step2,
 #os3_gui_toggle:checked~.os3_step2,
-#os3_cli_toggle:checked~.os3_step2 {
+#os3_cli_toggle:checked~.os3_step2,
+#os4_gui_toggle:checked~.os3_step2,
+#os4_cli_toggle:checked~.os3_step2 {
     display: none;
 }
 
@@ -150,7 +157,11 @@
 #os3_gui_toggle:checked~#step3,
 #os3_gui_toggle:checked~#step3 .os3_gui_instruction,
 #os3_cli_toggle:checked~#step3,
-#os3_cli_toggle:checked~#step3 .os3_cli_instruction {
+#os3_cli_toggle:checked~#step3 .os3_cli_instruction,
+#os4_gui_toggle:checked~#step3,
+#os4_gui_toggle:checked~#step3 .os4_gui_instruction,
+#os4_cli_toggle:checked~#step3,
+#os4_cli_toggle:checked~#step3 .os4_cli_instruction {
     display: block;
 }
 
