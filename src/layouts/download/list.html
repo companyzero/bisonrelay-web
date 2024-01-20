@@ -163,6 +163,19 @@
                     }}
                     {{ partial "dl-2-andr-gui-install.html" }}
                 </div>
+                <div class="os4_cli_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.andr.cli
+                        )
+                    }}
+                    {{ partial "dl-2-andr-cli-install.html"
+                        (dict
+                            "filename" $.Site.Data.download_links.andr.cli.example_filename
+                        )
+                    }}
+                </div>
 
                 <div class="small-header">3. Get Connected</div>
                 <div class="dl-instruction">
