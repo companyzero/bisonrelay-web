@@ -129,7 +129,7 @@
 #os_1_toggle:checked~.os1_step2,
 #os_2_toggle:checked~.os2_step2,
 #os_3_toggle:checked~.os3_step2,
-#os_4_toggle:checked~.os3_step2 {
+#os_4_toggle:checked~.os4_step2 {
     display: block;
 }
 
@@ -140,8 +140,8 @@
 #os2_cli_toggle:checked~.os2_step2,
 #os3_gui_toggle:checked~.os3_step2,
 #os3_cli_toggle:checked~.os3_step2,
-#os4_gui_toggle:checked~.os3_step2,
-#os4_cli_toggle:checked~.os3_step2 {
+#os4_gui_toggle:checked~.os4_step2,
+#os4_cli_toggle:checked~.os4_step2 {
     display: none;
 }
 
