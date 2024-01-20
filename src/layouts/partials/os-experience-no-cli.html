@@ -1,0 +1,35 @@
+{{ $gui := resources.Get "images/dl-icons/gui-big.svg" }}
+{{ $cli := resources.Get "images/dl-icons/cli-big.svg" }}
+
+<input class="d-none" type="radio" id="{{.os}}_gui_toggle" name="{{.os}}_experience_toggler" />
+<input class="d-none" type="radio" id="{{.os}}_cli_toggle" name="{{.os}}_experience_toggler" />
+
+<div class="{{.os}}_step2">
+
+    <div class="subpage-header center">
+        <div class="subpage-title w600 lighter">{{ T "os_choose_experience" }}</div>
+    </div>
+
+    <div class="oses">
+
+        <div class="os enabled">
+            <label for="{{.os}}_gui_toggle">
+            </label>
+            <img class="os-logo" src="{{ $gui.RelPermalink }}" alt="GUI icon">
+            <div class="the-name">
+                {{ T "os_gui" }}
+            </div>
+        </div>
+
+        <div class="os disabled">
+            <label for="{{.os}}_cli_toggle">
+            </label>
+            <img class="os-logo" src="{{ $cli.RelPermalink }}" alt="CLI icon">
+            <div class="the-name">
+                {{ T "os_cli" }}
+            </div>
+        </div>
+
+    </div>
+
+</div>
