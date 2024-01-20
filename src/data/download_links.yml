@@ -1,5 +1,14 @@
 release_notes: "https://github.com/companyzero/bisonrelay/releases/tag/v0.1.10"
 andr:
+  cli:
+    msg: "CLI client for Android"
+    example_filename: "bisonrelay-android-v0.1.10" 
+    links:
+      -
+        os: Android
+        arch: arm64
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.1.10/bisonrelay-android-v0.1.10.apk"
+
   gui:
     msg: "GUI client for Android"
     links:
