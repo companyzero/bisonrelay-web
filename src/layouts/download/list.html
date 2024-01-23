@@ -79,7 +79,7 @@
         {{ partial "os-experience.html" (dict "os" "os1") }}
         {{ partial "os-experience.html" (dict "os" "os2") }}
         {{ partial "os-experience.html" (dict "os" "os3") }}
-        {{ partial "os-experience.html" (dict "os" "os4") }}
+        <!-- No CLI/GUI choice for android/ios, they go straight to download page -->
 
         <div id="step3">
             <div class="subpage-header center">
@@ -154,27 +154,14 @@
                         )
                     }}
                 </div>
-                <div class="os4_gui_instruction">
+                <div class="os4_instruction">
                     {{ partial "dl-1-download-package.html"
                         (dict
                             "notes_url" $.Site.Data.download_links.release_notes
                             "platform" $.Site.Data.download_links.andr.gui
                         )
                     }}
-                    {{ partial "dl-2-andr-gui-install.html" }}
-                </div>
-                <div class="os4_cli_instruction">
-                    {{ partial "dl-1-download-package.html"
-                        (dict
-                            "notes_url" $.Site.Data.download_links.release_notes
-                            "platform" $.Site.Data.download_links.andr.cli
-                        )
-                    }}
-                    {{ partial "dl-2-andr-cli-install.html"
-                        (dict
-                            "filename" $.Site.Data.download_links.andr.cli.example_filename
-                        )
-                    }}
+                    {{ partial "dl-2-andr-install.html" }}
                 </div>
 
                 <div class="small-header">3. Get Connected</div>
