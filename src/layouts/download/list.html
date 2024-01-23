@@ -16,6 +16,7 @@
         <input class="d-none" type="radio" id="os_1_toggle" name="os_toggler" />
         <input class="d-none" type="radio" id="os_2_toggle" name="os_toggler" />
         <input class="d-none" type="radio" id="os_3_toggle" name="os_toggler" />
+        <input class="d-none" type="radio" id="os_4_toggle" name="os_toggler" />
 
         <div id="step1">
 
@@ -54,12 +55,13 @@
 
                 <div class="break-row"></div>
 
-                <div class="os disabled">
+                <div class="os enabled">
+                    <label for="os_4_toggle">
+                    </label>
                     <img class="os-logo" src="{{ $andr.RelPermalink }}" alt="Android logo">
                     <div class="the-name">
                         {{ T "os_4_name" }}
                     </div>
-                    <div class="coming-soon">{{ T "os_coming_soon" }}</div>
                 </div>
 
                 <div class="os disabled">
@@ -77,6 +79,7 @@
         {{ partial "os-experience.html" (dict "os" "os1") }}
         {{ partial "os-experience.html" (dict "os" "os2") }}
         {{ partial "os-experience.html" (dict "os" "os3") }}
+        <!-- No CLI/GUI choice for android/ios, they go straight to download page -->
 
         <div id="step3">
             <div class="subpage-header center">
@@ -150,6 +153,15 @@
                             "filename" $.Site.Data.download_links.linux.cli.example_filename
                         )
                     }}
+                </div>
+                <div class="os4_instruction">
+                    {{ partial "dl-1-download-package.html"
+                        (dict
+                            "notes_url" $.Site.Data.download_links.release_notes
+                            "platform" $.Site.Data.download_links.andr.gui
+                        )
+                    }}
+                    {{ partial "dl-2-andr-install.html" }}
                 </div>
 
                 <div class="small-header">3. Get Connected</div>

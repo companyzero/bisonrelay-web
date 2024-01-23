@@ -96,39 +96,53 @@
     }
 }
 
-// Hide step 2 on page load.
+// Hide all versions of step 2 on page load.
 .os1_step2,
 .os2_step2,
-.os3_step2 {
+.os3_step2,
+.os4_step2,
+.os5_step2 {
     display: none;
 }
 
-// Hide step 3 and all instructions on page load.
+// Hide all versions of step 3 on page load.
 #step3,
 .os1_gui_instruction,
 .os1_cli_instruction,
 .os2_gui_instruction,
 .os2_cli_instruction,
 .os3_gui_instruction,
-.os3_cli_instruction {
+.os3_cli_instruction,
+.os4_instruction,
+.os5_instruction {
     display: none;
 }
 
-// When an OS has been selected, hide step 1.
+// When any OS has been selected, hide step 1.
 #os_1_toggle:checked~#step1,
 #os_2_toggle:checked~#step1,
-#os_3_toggle:checked~#step1 {
+#os_3_toggle:checked~#step1,
+#os_4_toggle:checked~#step1,
+#os_5_toggle:checked~#step1 {
     display: none;
 }
 
-// When an OS has been selected, show appropriate step 2.
+// When a desktop OS has been selected, show appropriate step 2.
 #os_1_toggle:checked~.os1_step2,
 #os_2_toggle:checked~.os2_step2,
 #os_3_toggle:checked~.os3_step2 {
     display: block;
 }
 
-// When an experience has been selected, hide step 2.
+// When a mobile OS has been selected, skip step 2 and show appropriate step 3.
+#os_4_toggle:checked~#step3,
+#os_4_toggle:checked~#step3 .os4_instruction,
+#os_5_toggle:checked~#step3,
+#os_5_toggle:checked~#step3 .os5_instruction {
+    display: block;
+}
+
+// When a desktop experience has been selected, hide step 2.
 #os1_gui_toggle:checked~.os1_step2,
 #os1_cli_toggle:checked~.os1_step2,
 #os2_gui_toggle:checked~.os2_step2,
@@ -138,7 +152,7 @@
     display: none;
 }
 
-// When an experience has been selected, show appropriate step 3.
+// When a desktop experience has been selected, show appropriate step 3.
 #os1_gui_toggle:checked~#step3,
 #os1_gui_toggle:checked~#step3 .os1_gui_instruction,
 #os1_cli_toggle:checked~#step3,
