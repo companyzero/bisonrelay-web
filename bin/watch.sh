@@ -18,4 +18,4 @@ hugo server \
     --buildDrafts \
     --disableFastRender \
     --source src \
-    --baseURL http://localhost:1313
+    --baseURL http://localhost:1313/
