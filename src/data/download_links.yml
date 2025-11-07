@@ -70,4 +70,4 @@ windows:
       -
         os: Windows
         arch: amd64
-        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.2.4/bisonrelay-windows-amd64-v0.2.4.exe"
+        url: "https://github.com/companyzero/bisonrelay/releases/download/v0.2.4/bisonrelay-windows-amd64.v0.2.4.exe"
